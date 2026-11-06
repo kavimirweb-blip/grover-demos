@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Grover Garments | Homepage mockup 2 by Kavimir</title>
+<style>
+@font-face{font-family:"Inter";font-weight:400;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"PJS";font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"PJS";font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2) format("woff2")}
+:root{--ink:#111214;--bg:#fafaf7;--line:#e6e4de;--muted:#6b6f76;--red:#c8102e;--card:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:PJS,Inter,sans-serif;margin:0;letter-spacing:-0.02em}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;padding:13px 22px;font:600 .92rem Inter,sans-serif;cursor:pointer}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-red{background:var(--red);color:#fff}
+.sample{background:var(--ink);color:#d8d8d4;text-align:center;font-size:.76rem;padding:7px 12px}
+.sample b{color:#fff}
+
+header.site{background:var(--bg);border-bottom:1px solid var(--line);position:relative;z-index:30}
+.top{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;gap:20px}
+.top .links{display:flex;gap:22px;font-size:.85rem;color:var(--muted)}
+.logo{text-align:center;line-height:1}
+.logo b{display:block;font:800 1.5rem PJS,sans-serif;letter-spacing:.02em}
+.logo b i{font-style:normal;color:var(--red)}
+.logo small{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.top .right{display:flex;gap:16px;align-items:center;font-size:.85rem}
+.cartb{border:1.5px solid var(--ink);border-radius:999px;padding:7px 14px;font-weight:600;white-space:nowrap}
+nav.main{border-top:1px solid var(--line)}
+nav.main .wrap{display:flex;justify-content:center;gap:34px;padding:13px 24px;font-weight:600;font-size:.9rem;overflow-x:auto;white-space:nowrap}
+nav.main a:hover{color:var(--red)}
+
+.hero{padding:64px 0 54px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.kick{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:600}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.7rem);line-height:1.04;margin:14px 0 16px}
+.hero p{color:var(--muted);font-size:1.05rem;max-width:520px;margin:0 0 24px}
+.bigsearch{display:flex;background:#fff;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;max-width:560px}
+.bigsearch input{flex:1;border:0;outline:0;padding:17px 18px;font:400 1rem Inter,sans-serif;min-width:0;background:transparent}
+.bigsearch button{border:0;background:var(--ink);color:#fff;padding:0 26px;font:600 .92rem Inter;cursor:pointer}
+.pop{margin-top:14px;font-size:.84rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pop button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font:500 .8rem Inter;cursor:pointer;color:var(--ink)}
+.hero-art{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.hero-art div{aspect-ratio:3/5;border-radius:14px;display:grid;place-items:end start;padding:12px;font:700 .8rem PJS;color:#fff;position:relative;overflow:hidden}
+.hero-art div svg{position:absolute;right:-8px;top:-8px;width:70%;height:70%;opacity:.2}
+.h1{background:linear-gradient(160deg,#1c1c1f,#3a3a40)}
+.h2{background:linear-gradient(160deg,#c8102e,#8d0b21);margin-top:34px}
+.h3{background:linear-gradient(160deg,#caa45a,#9c7a33)}
+
+.people{padding:20px 0 60px}
+.people .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.person{border-radius:20px;padding:30px;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;position:relative;overflow:hidden;cursor:pointer}
+.person svg{position:absolute;right:18px;top:18px;width:90px;height:90px;opacity:.22}
+.person h3{font-size:1.5rem}
+.person span{font-size:.88rem;opacity:.85}
+.p1{background:linear-gradient(150deg,#16213e,#2d3f73)}
+.p2{background:linear-gradient(150deg,#7a0a1c,#c8102e)}
+.p3{background:linear-gradient(150deg,#8a6b1f,#caa45a)}
+
+.shop{padding:10px 0 70px}
+.shop-h{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px;gap:14px;flex-wrap:wrap}
+.shop-h h2{font-size:1.9rem}
+.shop-h p{margin:4px 0 0;color:var(--muted);font-size:.92rem}
+.sort select{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:10px 14px;font:500 .88rem Inter;color:var(--ink)}
+.layout{display:grid;grid-template-columns:240px 1fr;gap:34px}
+aside.filters{position:sticky;top:20px;align-self:start}
+.fg{border-top:1px solid var(--line);padding:16px 0}
+.fg:first-child{border-top:0;padding-top:0}
+.fg h4{margin:0 0 10px;font:700 .86rem PJS;letter-spacing:.04em;text-transform:uppercase}
+.fg label{display:flex;gap:10px;align-items:center;font-size:.9rem;padding:4px 0;cursor:pointer}
+.fg input[type=checkbox],.fg input[type=radio]{accent-color:var(--ink);width:16px;height:16px}
+.sizes{display:flex;flex-wrap:wrap;gap:8px}
+.sizes span{border:1.5px solid var(--line);border-radius:8px;padding:6px 11px;font-size:.82rem;font-weight:600;background:#fff;cursor:pointer}
+.sizes span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.range{height:4px;background:var(--line);border-radius:4px;position:relative;margin:14px 6px 10px}
+.range:before{content:"";position:absolute;left:12%;right:30%;top:0;bottom:0;background:var(--ink);border-radius:4px}
+.range i{position:absolute;top:-6px;width:16px;height:16px;border-radius:50%;background:#fff;border:2px solid var(--ink)}
+.range i:nth-child(1){left:calc(12% - 8px)}.range i:nth-child(2){right:calc(30% - 8px)}
+.rl{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted)}
+.count{font-size:.86rem;color:var(--muted);margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--card);border-radius:16px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.card .img{aspect-ratio:1/1.15;display:grid;place-items:center;position:relative}
+.card .img svg{width:42%;height:42%;color:rgba(255,255,255,.9)}
+.card .tag{position:absolute;left:12px;top:12px;background:#fff;border-radius:6px;padding:3px 9px;font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.card .b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;flex:1}
+.card .nm{font-weight:600;font-size:.95rem}
+.card .ct{font-size:.78rem;color:var(--muted)}
+.card .pr{font:800 1.05rem PJS;margin-top:4px}
+.card .pr s{font:400 .8rem Inter;color:var(--muted);margin-left:6px}
+.card .row{display:flex;gap:8px;margin-top:12px}
+.card .row .btn{padding:10px 12px;font-size:.8rem;flex:1;border-radius:8px}
+.none{display:none;padding:40px 0;color:var(--muted)}
+.pager{display:flex;gap:8px;margin-top:28px;font-size:.88rem}
+.pager span{border:1.5px solid var(--line);border-radius:8px;padding:7px 13px;background:#fff;font-weight:600}
+.pager span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.strip{background:var(--ink);color:#fff;padding:54px 0}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.strip b{display:block;font:700 1rem PJS;margin-bottom:6px}
+.strip p{margin:0;font-size:.88rem;color:#b9bbc2}
+.strip .n{font:800 2rem PJS;color:#caa45a;margin-bottom:6px}
+
+.visit{padding:70px 0}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:46px;align-items:start}
+.visit h2{font-size:1.9rem;margin-bottom:10px}
+.visit p{color:var(--muted);margin:0 0 18px}
+.loc{display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.loc div{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line)}
+.loc div:first-child{border-top:0}
+.loc b{font:700 1.05rem PJS;display:block}
+.loc span{font-size:.86rem;color:var(--muted)}
+.mem{padding:0 0 70px}
+.mem .box{border:1.5px solid var(--ink);border-radius:20px;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;background:#fff}
+.mem h2{font-size:1.5rem}
+.mem p{margin:4px 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 0 30px;font-size:.86rem;color:var(--muted)}
+footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer b{color:var(--ink);font-family:PJS}
+footer .copy{margin-top:22px;font-size:.76rem}
+
+@media(max-width:980px){
+ .hero .wrap{grid-template-columns:1fr;gap:34px}
+ .hero-art{max-width:420px}
+ .people .wrap{grid-template-columns:1fr}
+ .layout{grid-template-columns:1fr}
+ aside.filters{position:static;display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .strip .wrap{grid-template-columns:1fr 1fr}
+ .visit .wrap{grid-template-columns:1fr}
+ .top .links{display:none}
+}
+@media(max-width:600px){
+ .top{padding-top:14px;padding-bottom:14px}.logo b{font-size:1.15rem}.logo small{letter-spacing:.14em}.top .right a{display:none}
+ .grid{gap:12px}.card .row{flex-direction:column}
+ aside.filters{grid-template-columns:1fr}
+ .strip .wrap{grid-template-columns:1fr}
+ .bigsearch button{padding:0 16px}
+ .hero{padding:36px 0}
+}
+nav.main a.on{color:var(--red)}.subnav{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}.subnav a{display:block;padding:3px 0;font-size:.86rem;color:var(--muted);cursor:pointer}.subnav a.g{font-weight:700;color:var(--ink);margin-top:6px}.subnav a.s{padding-left:12px}.subnav a.on{color:var(--red);font-weight:700}.subnav a:hover{color:var(--red)}
+.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 26px 40px -26px rgba(0,0,0,.45);z-index:50;max-height:72vh;overflow-y:auto}
+.mega[hidden]{display:none}
+.mg-wrap{max-width:1180px;margin:0 auto;padding:26px 20px 28px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.mg-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:22px}
+.mg-h{display:block;font:700 .96rem PJS,sans-serif;color:var(--ink);margin-bottom:8px}
+.mg-i{display:block;padding:4px 0;font-size:.88rem;color:var(--muted)}
+.mg-h:hover,.mg-i:hover{color:var(--red)}
+.mg-view{display:inline-flex;background:var(--ink);color:#fff;border-radius:999px;padding:11px 20px;font-weight:600;font-size:.88rem;white-space:nowrap}
+.crumb{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:.88rem;margin-bottom:16px}
+.crumb span{font-weight:700;color:var(--ink)}
+.crumb button{border:0;background:none;color:var(--red);font:600 .84rem Inter,sans-serif;cursor:pointer;text-decoration:underline;padding:0}
+.crumb b{color:var(--muted);font-weight:500}
+@media(max-width:640px){.mg-wrap{grid-template-columns:1fr;padding:18px 20px 22px}.mg-cols{grid-template-columns:1fr 1fr;gap:16px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kurta" viewBox="0 0 64 64"><path fill="currentColor" d="M22 6l10 6 10-6 12 8-6 12-6-3v35H22V23l-6 3-6-12z"/></symbol>
+  <symbol id="frock" viewBox="0 0 64 64"><path fill="currentColor" d="M24 6h16l2 12 14 40H8l14-40z"/></symbol>
+  <symbol id="shirt" viewBox="0 0 64 64"><path fill="currentColor" d="M20 6l12 6 12-6 14 10-8 12-6-4v36H20V24l-6 4-8-12z"/></symbol>
+</svg>
+<div class="sample"><b>Sample design 2</b> by Kavimir Web Studio for Grover Garments. Products and prices are placeholders. Not the live website.</div>
+
+<header class="site">
+  <div class="wrap top">
+    <div class="links"><a href="#stores">Our stores</a><a href="#member">Members</a></div>
+    <a class="logo" href="#"><b>GROVER <i>GARMENTS</i></b><small>A Complete Family Store &middot; Since 1983</small></a>
+    <div class="right"><a href="https://wa.me/919899753700" target="_blank" rel="noopener">WhatsApp</a><span class="cartb">Cart (<span id="cartN">0</span>)</span></div>
+  </div>
+  <nav class="main"><div class="wrap">
+    <a href="#shop" data-cat="All">All</a><a href="#shop" data-top="Men">Men</a><a href="#shop" data-top="Women">Women</a><a href="#shop" data-top="Kids">Kids</a><a href="#shop" data-cat="Offers">Offers</a>
+  </div></nav>
+  <div class="mega" id="mega" hidden></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kick">Delhi's family fashion store since 1983</div>
+      <h1>The whole family store, now online.</h1>
+      <p>Search the full collection, pick your size and order in minutes. Delivered across India, or visit one of our three Delhi stores.</p>
+      <form class="bigsearch" onsubmit="return false">
+        <input id="q" type="search" placeholder="Search kurta set, jeans, frock, co-ord..." aria-label="Search products">
+        <button type="button" onclick="document.getElementById('shop').scrollIntoView()">Search</button>
+      </form>
+      <div class="pop">Popular: <button data-s="kurta">Kurta set</button><button data-s="jeans">Jeans</button><button data-s="frock">Frock</button><button data-s="co-ord">Co-ord</button></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="h1"><svg><use href="#shirt"/></svg>Men</div>
+      <div class="h2"><svg><use href="#kurta"/></svg>Women</div>
+      <div class="h3"><svg><use href="#frock"/></svg>Kids</div>
+    </div>
+  </div>
+</section>
+
+<section class="people">
+  <div class="wrap">
+    <div class="person p1" data-cat="Men"><svg><use href="#shirt"/></svg><h3>Menswear</h3><span>Kurta sets, shirts, jeans</span></div>
+    <div class="person p2" data-cat="Women"><svg><use href="#kurta"/></svg><h3>Womenswear</h3><span>Suits, co-ords, kurtis</span></div>
+    <div class="person p3" data-cat="Kids"><svg><use href="#frock"/></svg><h3>Kids</h3><span>Girls wear and boys wear</span></div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="shop-h">
+      <div><h2>Shop the collection</h2><p>Filter by category, size and price to find the right piece fast, even in a very large range.</p></div>
+      <div class="sort"><select aria-label="Sort"><option>Sort: Featured</option><option>Price: low to high</option><option>Price: high to low</option><option>Newest first</option></select></div>
+    </div>
+    <div class="layout">
+      <aside class="filters">
+        <div class="fg"><h4>Category</h4>
+          <label><input type="radio" name="c" value="All" checked> All products</label>
+          <label><input type="radio" name="c" value="Men"> Men</label>
+          <label><input type="radio" name="c" value="Women"> Women</label>
+          <label><input type="radio" name="c" value="Kids"> Kids</label>
+          <label><input type="radio" name="c" value="Offers"> Offers</label>
+          <div class="subnav" id="subnav"></div>
+        </div>
+        <div class="fg"><h4>Size</h4><div class="sizes"><span>S</span><span class="on">M</span><span>L</span><span>XL</span><span>XXL</span></div></div>
+        <div class="fg"><h4>Price</h4><div class="range"><i></i><i></i></div><div class="rl"><span>₹500</span><span>₹3,000</span></div></div>
+        <div class="fg"><h4>Occasion</h4><label><input type="checkbox"> Festive</label><label><input type="checkbox"> Daily wear</label><label><input type="checkbox"> Wedding</label></div>
+      </aside>
+      <div>
+        <div class="crumb" id="crumb"></div>
+        <div class="count" id="count"></div>
+        <div class="grid" id="grid"></div>
+        <p class="none" id="none">No products match your search. Try another word.</p>
+        <div class="pager"><span class="on">1</span><span>2</span><span>3</span><span>...</span><span>Next</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div><div class="n">01</div><b>Search and filter</b><p>Find the exact outfit by name, size or price.</p></div>
+    <div><div class="n">02</div><b>Add to cart</b><p>Or tap Ask to chat with us on WhatsApp first.</p></div>
+    <div><div class="n">03</div><b>Pay securely</b><p>UPI, cards and other online payments.</p></div>
+    <div><div class="n">04</div><b>Delivered to you</b><p>Order updates on WhatsApp, delivery across India.</p></div>
+  </div>
+</section>
+
+<section class="visit" id="stores">
+  <div class="wrap">
+    <div><h2>Visit us in Delhi</h2><p>Prefer to try it on? Three Grover Garments stores are open for you.</p><a class="btn btn-dark" href="https://wa.me/919899753700" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+    <div class="loc">
+      <div><div><b>Burari (Sant Nagar)</b><span>A-458, 100 Ft. Road, Sant Nagar, Burari, Delhi 110084</span></div><a class="btn btn-line" href="#stores">Directions</a></div>
+      <div><div><b>Jahangirpuri</b><span>Full family collection</span></div><a class="btn btn-line" href="#stores">Directions</a></div>
+      <div><div><b>Krishna Nagar</b><span>Full family collection</span></div><a class="btn btn-line" href="#stores">Directions</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="mem" id="member">
+  <div class="wrap"><div class="box"><div><h2>Grover member?</h2><p>Log in to see your member benefits, track orders and check out faster.</p></div><div style="display:flex;gap:10px"><a class="btn btn-line" href="#member">Log in</a><a class="btn btn-dark" href="#member">Create account</a></div></div></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><b>GROVER GARMENTS</b><br>A Complete Family Store. Delhi's trusted family fashion destination since 1983.</div>
+      <div><b>Contact</b><br>WhatsApp: +91 98997 53700<br>Burari store: 099993 33002</div>
+    </div>
+    <div class="copy">Sample design 2 by Kavimir Web Studio (kavimir.com). A preview only. Final design, products, prices and photos are decided with Grover Garments.</div>
+  </div>
+</footer>
+
+<script src="catalogue.js"></script>
+<script>
+const PAL=[["#1c1c1f","#46464d"],["#8d0b21","#c8102e"],["#2d3f73","#5b7fc7"],["#7a5a1a","#caa45a"],["#0f6b4a","#2fb585"],["#5b1a6b","#a24bb8"]];
+const grid=document.getElementById('grid'),q=document.getElementById('q'),none=document.getElementById('none'),cartN=document.getElementById('cartN'),count=document.getElementById('count'),crumbEl=document.getElementById('crumb'),subnav=document.getElementById('subnav');
+let st={cat:'All',group:'',sub:''},n=0;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function renderSub(){
+  const m=GG.menu[st.cat];
+  if(!m){subnav.innerHTML='';return}
+  subnav.innerHTML=m.map(g=>`<a class="g ${st.group===g.g&&!st.sub?'on':''}" data-g="${g.g}">${g.g}</a>`+g.subs.map(s=>`<a class="s ${st.sub===s&&st.group===g.g?'on':''}" data-g="${g.g}" data-s="${s}">${s}</a>`).join('')).join('');
+}
+function render(){
+  const list=GG.filter(st,q.value);
+  const base=st.cat==='All'&&!q.value.trim();
+  const shown=base?list.slice(0,12):list;
+  grid.innerHTML=shown.map(p=>{const c=PAL[p.tone%PAL.length];return `<article class="card"><div class="img" style="background:linear-gradient(160deg,${c[0]},${c[1]})">${p.tag?`<span class="tag">${p.tag}</span>`:''}<svg><use href="#${p.icon}"/></svg></div><div class="b"><span class="nm">${esc(p.name)}</span><span class="ct">${p.group} &middot; ${p.sub}</span><span class="pr">${p.price}${p.old?`<s>${p.old}</s>`:''}</span><div class="row"><button class="btn btn-dark add">Add to cart</button><a class="btn btn-line" href="https://wa.me/919899753700" target="_blank" rel="noopener">Ask</a></div></div></article>`}).join('');
+  none.style.display=list.length?'none':'block';
+  count.textContent=base?'Showing 12 of '+list.length+' sample products. The live store shows the full range.':'Showing '+list.length+(list.length===1?' product':' products');
+  document.querySelectorAll('input[name=c]').forEach(r=>r.checked=(r.value===st.cat));
+  const cr=GG.crumb(st);
+  crumbEl.innerHTML=cr.length?`<span>${cr.map(esc).join(' &rsaquo; ')}</span><button type="button" id="clr">Clear</button>`:'';
+  const c=document.getElementById('clr');if(c)c.onclick=()=>set({cat:'All'});
+  renderSub();
+}
+
+function set(s){st={cat:s.cat||'All',group:s.group||'',sub:s.sub||''};render()}
+function go(s){set(s);document.getElementById('shop').scrollIntoView()}
+
+GG.initMega({nav:document.querySelector('nav.main'),panel:document.getElementById('mega'),header:document.querySelector('header.site'),onSelect:go});
+document.querySelectorAll('nav.main a[data-cat]').forEach(a=>a.addEventListener('click',()=>set({cat:a.dataset.cat})));
+document.querySelectorAll('input[name=c]').forEach(r=>r.addEventListener('change',()=>set({cat:r.value})));
+subnav.addEventListener('click',e=>{const a=e.target.closest('a');if(a)set({cat:st.cat,group:a.dataset.g,sub:a.dataset.s||''})});
+document.querySelectorAll('.person').forEach(p=>p.addEventListener('click',()=>go({cat:p.dataset.cat})));
+document.querySelectorAll('.pop button').forEach(b=>b.addEventListener('click',()=>{q.value=b.dataset.s;set({cat:'All'});document.getElementById('shop').scrollIntoView()}));
+document.querySelectorAll('.sizes span').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.sizes span').forEach(x=>x.classList.remove('on'));s.classList.add('on')}));
+q.addEventListener('input',render);
+grid.addEventListener('click',e=>{if(e.target.classList.contains('add')){n++;cartN.textContent=n}});
+render();
+</script>
+</body>
+</html>

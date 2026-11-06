@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Grover Garments | Homepage mockup by Kavimir</title>
+<style>
+@font-face{font-family:"Inter";font-weight:400;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"PJS";font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"PJS";font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2) format("woff2")}
+:root{--red:#c8102e;--red-d:#a30d25;--navy:#16213e;--gold:#ffb703;--cream:#fff8f0;--ink:#1d2433;--muted:#667085;--line:#eadfd2;--green:#1a9b55}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:PJS,Inter,sans-serif;margin:0;letter-spacing:-0.015em;color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 24px;font:600 .95rem Inter,sans-serif;cursor:pointer}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-d)}
+.btn-green{background:var(--green);color:#fff}
+.btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+
+/* sample strip */
+.sample{background:var(--navy);color:#fff;text-align:center;font-size:.78rem;padding:7px 12px;letter-spacing:.01em}
+.sample b{color:var(--gold)}
+
+/* top bar */
+.topbar{background:var(--red);color:#fff;font-size:.82rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 20px;flex-wrap:wrap}
+.topbar span{opacity:.95}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:center;gap:22px;padding:14px 0}
+.logo{display:flex;flex-direction:column;line-height:1.05;flex-shrink:0}
+.logo b{font:800 1.45rem PJS,sans-serif;color:var(--red);letter-spacing:-0.02em}
+.logo small{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);font-weight:600}
+.search{flex:1;display:flex;max-width:560px;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.search input{flex:1;border:0;outline:0;padding:12px 18px;font:400 .95rem Inter,sans-serif;min-width:0}
+.search button{border:0;background:var(--red);color:#fff;padding:0 20px;font:600 .9rem Inter;cursor:pointer}
+.actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.cart{position:relative;border:1.5px solid var(--line);border-radius:999px;padding:10px 16px;font-weight:600;font-size:.9rem;background:#fff}
+.cart i{font-style:normal;background:var(--red);color:#fff;border-radius:999px;font-size:.72rem;padding:2px 7px;margin-left:6px}
+nav.cats{border-top:1px solid var(--line);background:#fff}
+nav.cats .wrap{display:flex;gap:26px;padding:11px 20px;overflow-x:auto;font-weight:600;font-size:.92rem;white-space:nowrap}
+nav.cats a:hover{color:var(--red)}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--cream) 0%,#fff1e0 100%);overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:center;padding:56px 0 60px}
+.eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.78rem;font-weight:600;color:var(--red);margin-bottom:18px}
+.hero h1{font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.08}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{font-size:1.05rem;color:var(--muted);max-width:520px;margin:16px 0 26px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:.84rem;color:var(--navy);font-weight:600}
+.trust span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:8px}
+.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:170px 170px;gap:14px}
+.tile{border-radius:22px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:16px;color:#fff;font:700 1.05rem PJS,sans-serif}
+.tile svg{position:absolute;right:-6px;top:-6px;width:96px;height:96px;opacity:.28}
+.t1{background:linear-gradient(150deg,#c8102e,#7a0a1c);grid-row:span 2}
+.t2{background:linear-gradient(150deg,#16213e,#2b3d6b)}
+.t3{background:linear-gradient(150deg,#e09a00,#ffb703);color:#3a2a00}
+
+/* sections */
+section{padding:60px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-h h2{font-size:1.75rem}
+.sec-h p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.cat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.cat{border:1px solid var(--line);border-radius:20px;padding:22px 16px;text-align:center;background:#fff;transition:.15s;cursor:pointer}
+.cat:hover{transform:translateY(-3px);border-color:var(--red);box-shadow:0 14px 28px -16px rgba(200,16,46,.5)}
+.cat .ic{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;background:var(--cream)}
+.cat .ic svg{width:34px;height:34px;color:var(--red)}
+.cat b{display:block;font:700 .98rem PJS,sans-serif;color:var(--navy)}
+.cat small{color:var(--muted);font-size:.78rem}
+
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font:600 .85rem Inter;cursor:pointer;color:var(--navy)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card .img{aspect-ratio:4/5;display:grid;place-items:center;position:relative}
+.card .img svg{width:46%;height:46%;color:rgba(255,255,255,.9)}
+.card .tag{position:absolute;left:12px;top:12px;background:#fff;border-radius:999px;padding:4px 10px;font-size:.7rem;font-weight:700;color:var(--red)}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:3px;flex:1}
+.card .nm{font-weight:600;font-size:.95rem;color:var(--navy)}
+.card .ct{font-size:.78rem;color:var(--muted)}
+.card .pr{font:800 1.1rem PJS,sans-serif;color:var(--ink);margin-top:4px}
+.card .pr s{font:400 .8rem Inter;color:var(--muted);margin-left:6px}
+.card .row{display:flex;gap:8px;margin-top:10px}
+.card .row .btn{padding:9px 14px;font-size:.82rem;flex:1}
+.none{display:none;text-align:center;color:var(--muted);padding:30px 0}
+
+.band{background:var(--navy);color:#fff}
+.band h2{color:#fff}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+.step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px}
+.step .n{width:34px;height:34px;border-radius:50%;background:var(--gold);color:#3a2a00;font:800 .95rem PJS;display:grid;place-items:center;margin-bottom:12px}
+.step b{display:block;font:700 1rem PJS,sans-serif;margin-bottom:4px}
+.step p{margin:0;font-size:.86rem;color:#c8cfe3}
+
+.stores{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.store{border:1px solid var(--line);border-radius:20px;padding:24px;background:#fff}
+.store h3{font-size:1.15rem;margin-bottom:6px}
+.store p{margin:0 0 16px;color:var(--muted);font-size:.9rem}
+.member{background:linear-gradient(135deg,var(--red),#8f0a20);color:#fff;border-radius:26px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.member h2{color:#fff;font-size:1.6rem}
+.member p{margin:6px 0 0;color:#ffd9de;max-width:520px}
+
+footer{background:#0f1730;color:#c8cfe3;padding:44px 0 30px;font-size:.88rem}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;font:700 .95rem PJS;margin:0 0 10px}
+footer a{display:block;margin:4px 0;color:#c8cfe3}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:16px;font-size:.78rem;color:#8e98b8}
+
+@media(max-width:960px){
+ .hero-in{grid-template-columns:1fr;padding:36px 0 40px}
+ .collage{grid-template-rows:140px 140px}
+ .cat-grid{grid-template-columns:repeat(3,1fr)}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr 1fr}
+ .stores{grid-template-columns:1fr}
+ footer .cols{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ .head{flex-wrap:wrap;gap:12px}
+ .search{order:3;flex-basis:100%;max-width:none}
+ .actions .btn-green{display:none}
+ .cat-grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr}
+ .grid{gap:12px}
+ .card .row{flex-direction:column}
+ section{padding:44px 0}
+}
+nav.cats a.on{color:var(--red)}
+.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 26px 40px -26px rgba(0,0,0,.45);z-index:50;max-height:72vh;overflow-y:auto}
+.mega[hidden]{display:none}
+.mg-wrap{max-width:1180px;margin:0 auto;padding:26px 20px 28px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.mg-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:22px}
+.mg-h{display:block;font:700 .96rem PJS,sans-serif;color:var(--navy);margin-bottom:8px}
+.mg-i{display:block;padding:4px 0;font-size:.88rem;color:var(--muted)}
+.mg-h:hover,.mg-i:hover{color:var(--red)}
+.mg-view{display:inline-flex;background:var(--red);color:#fff;border-radius:999px;padding:11px 20px;font-weight:600;font-size:.88rem;white-space:nowrap}
+.crumb{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:.88rem;margin-bottom:16px}
+.crumb span{font-weight:700;color:var(--navy)}
+.crumb button{border:0;background:none;color:var(--red);font:600 .84rem Inter,sans-serif;cursor:pointer;text-decoration:underline;padding:0}
+.crumb b{color:var(--muted);font-weight:500}
+@media(max-width:640px){.mg-wrap{grid-template-columns:1fr;padding:18px 20px 22px}.mg-cols{grid-template-columns:1fr 1fr;gap:16px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kurta" viewBox="0 0 64 64"><path fill="currentColor" d="M22 6l10 6 10-6 12 8-6 12-6-3v35H22V23l-6 3-6-12z"/></symbol>
+  <symbol id="frock" viewBox="0 0 64 64"><path fill="currentColor" d="M24 6h16l2 12 14 40H8l14-40z"/></symbol>
+  <symbol id="shirt" viewBox="0 0 64 64"><path fill="currentColor" d="M20 6l12 6 12-6 14 10-8 12-6-4v36H20V24l-6 4-8-12z"/></symbol>
+</svg>
+
+<div class="sample"><b>Sample design</b> prepared by Kavimir Web Studio for Grover Garments. Products and prices shown are placeholders. Not the live website.</div>
+<div class="topbar"><div class="wrap"><span>Pan-India delivery &middot; Order on WhatsApp +91 98997 53700</span><span>Burari &middot; Jahangirpuri &middot; Krishna Nagar</span></div></div>
+
+<header class="site">
+  <div class="wrap head">
+    <a class="logo" href="#top"><b>GROVER GARMENTS</b><small>A Complete Family Store</small></a>
+    <form class="search" id="searchForm" onsubmit="return false">
+      <input id="q" type="search" placeholder="Search kurta sets, jeans, frocks, co-ords..." aria-label="Search products">
+      <button type="button" onclick="document.getElementById('shop').scrollIntoView()">Search</button>
+    </form>
+    <div class="actions">
+      <a class="btn btn-green" href="https://wa.me/919899753700" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <span class="cart">Cart<i id="cartN">0</i></span>
+    </div>
+  </div>
+  <nav class="cats"><div class="wrap">
+    <a href="#shop" data-cat="All">All products</a><a href="#shop" data-top="Men">Men</a><a href="#shop" data-top="Women">Women</a><a href="#shop" data-top="Kids">Kids</a><a href="#shop" data-cat="Offers">Offers</a><a href="#stores">Our stores</a><a href="#member">Member login</a>
+  </div></nav>
+  <div class="mega" id="mega" hidden></div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">Delhi's family fashion store since 1983</span>
+      <h1>Everything your family wears, <em>now one tap away</em>.</h1>
+      <p>Ethnic, western and kids wear from the store you have trusted for years. Browse the full collection online, order in minutes and get it delivered anywhere in India.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="#shop">Shop the collection</a>
+        <a class="btn btn-ghost" href="https://wa.me/919899753700" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+      <div class="trust"><span>Three Delhi stores</span><span>Pan-India delivery</span><span>UPI and card payments</span></div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="tile t1"><svg><use href="#kurta"/></svg>Festive and ethnic wear</div>
+      <div class="tile t2"><svg><use href="#shirt"/></svg>Menswear</div>
+      <div class="tile t3"><svg><use href="#frock"/></svg>Kids collection</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-h"><div><h2>Shop by category</h2><p>Find anything in the full range in a few taps.</p></div></div>
+    <div class="cat-grid">
+      <div class="cat" data-cat="Men"><div class="ic"><svg><use href="#shirt"/></svg></div><b>Menswear</b><small>Kurta sets, shirts, jeans</small></div>
+      <div class="cat" data-cat="Women"><div class="ic"><svg><use href="#kurta"/></svg></div><b>Womenswear</b><small>Suits, co-ords, kurtis</small></div>
+      <div class="cat" data-cat="Kids"><div class="ic"><svg><use href="#frock"/></svg></div><b>Girls Wear</b><small>Frocks, lehengas, sets</small></div>
+      <div class="cat" data-cat="Kids"><div class="ic"><svg><use href="#shirt"/></svg></div><b>Boys Wear</b><small>Kurta sets, denim, co-ords</small></div>
+      <div class="cat" data-cat="Offers"><div class="ic"><svg><use href="#kurta"/></svg></div><b>Offers and combos</b><small>Festive deals</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>Featured collection</h2><p>Search by name or filter by category. Every product has photos, sizes and price.</p></div></div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="All">All</button><button class="chip" data-cat="Men">Men</button><button class="chip" data-cat="Women">Women</button><button class="chip" data-cat="Kids">Kids</button><button class="chip" data-cat="Offers">Offers</button>
+    </div>
+    <div class="crumb" id="crumb"></div>
+    <div class="grid" id="grid"></div>
+    <p class="none" id="none">No products match your search. Try another word.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Order in four easy steps</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><b>Browse or search</b><p>Find the exact outfit by name, category or price.</p></div>
+      <div class="step"><div class="n">2</div><b>Add to cart</b><p>Pick size and colour, or tap to ask us on WhatsApp.</p></div>
+      <div class="step"><div class="n">3</div><b>Pay securely</b><p>UPI, cards and other online payment options.</p></div>
+      <div class="step"><div class="n">4</div><b>Get it delivered</b><p>Order updates on WhatsApp, delivery across India.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stores">
+  <div class="wrap">
+    <div class="sec-h"><div><h2>Visit one of our three stores</h2><p>Prefer to try it on? Come in and see the full range.</p></div></div>
+    <div class="stores">
+      <div class="store"><h3>Burari (Sant Nagar)</h3><p>A-458, 100 Ft. Road, Sant Nagar, Burari, Delhi 110084</p><a class="btn btn-ghost" href="#stores">Get directions</a></div>
+      <div class="store"><h3>Jahangirpuri</h3><p>Visit our Jahangirpuri branch for the full family collection.</p><a class="btn btn-ghost" href="#stores">Get directions</a></div>
+      <div class="store"><h3>Krishna Nagar</h3><p>Visit our Krishna Nagar branch for the full family collection.</p><a class="btn btn-ghost" href="#stores">Get directions</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="member" style="padding-top:0">
+  <div class="wrap">
+    <div class="member">
+      <div><h2>Grover member? Log in.</h2><p>See your member benefits, track your orders and check out faster. New here? Create an account in a minute.</p></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-ghost" style="border-color:#fff;color:#fff;background:transparent" href="#member">Log in</a><a class="btn" style="background:var(--gold);color:#3a2a00" href="#member">Create account</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>GROVER GARMENTS</h4><p>A Complete Family Store. Delhi's trusted family fashion destination since 1983.</p></div>
+      <div><h4>Shop</h4><a href="#shop">Menswear</a><a href="#shop">Womenswear</a><a href="#shop">Girls and boys wear</a><a href="#shop">Offers</a></div>
+      <div><h4>Contact</h4><a href="https://wa.me/919899753700">WhatsApp: +91 98997 53700</a><a href="#stores">Burari store: 099993 33002</a><a href="#stores">Our three stores</a></div>
+    </div>
+    <div class="copy">Sample design by Kavimir Web Studio (kavimir.com). Layout and content are a preview only. Final design, products, prices and photos are decided with Grover Garments.</div>
+  </div>
+</footer>
+
+<script src="catalogue.js"></script>
+<script>
+const PAL=[["#16213e","#2f4a8a"],["#8f0a20","#c8102e"],["#2b3d6b","#4a6bb5"],["#6b4a00","#e09a00"],["#0f6b4a","#2fb585"],["#5b1a6b","#a24bb8"]];
+const grid=document.getElementById('grid'),q=document.getElementById('q'),none=document.getElementById('none'),cartN=document.getElementById('cartN'),crumbEl=document.getElementById('crumb');
+let st={cat:'All',group:'',sub:''},n=0;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function render(){
+  const list=GG.filter(st,q.value);
+  const base=st.cat==='All'&&!q.value.trim();
+  const shown=base?list.slice(0,12):list;
+  grid.innerHTML=shown.map(p=>{const c=PAL[p.tone%PAL.length];return `<article class="card"><div class="img" style="background:linear-gradient(150deg,${c[0]},${c[1]})">${p.tag?`<span class="tag">${p.tag}</span>`:''}<svg><use href="#${p.icon}"/></svg></div><div class="body"><span class="nm">${esc(p.name)}</span><span class="ct">${p.group} &middot; ${p.sub}</span><span class="pr">${p.price}${p.old?`<s>${p.old}</s>`:''}</span><div class="row"><button class="btn btn-red add">Add to cart</button><a class="btn btn-ghost" href="https://wa.me/919899753700" target="_blank" rel="noopener">Ask</a></div></div></article>`}).join('');
+  none.style.display=list.length?'none':'block';
+  document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('on',b.dataset.cat===st.cat));
+  const cr=GG.crumb(st);
+  crumbEl.innerHTML=cr.length?`<span>${cr.map(esc).join(' &rsaquo; ')}</span><button type="button" id="clr">Clear</button><b>${list.length} product${list.length===1?'':'s'}</b>`:(base?`<b>Showing 12 of ${list.length} sample products. The live store shows the full range.</b>`:'');
+  const c=document.getElementById('clr');if(c)c.onclick=()=>set({cat:'All'});
+}
+
+function set(s){st={cat:s.cat||'All',group:s.group||'',sub:s.sub||''};render()}
+function go(s){set(s);document.getElementById('shop').scrollIntoView()}
+
+GG.initMega({nav:document.querySelector('nav.cats'),panel:document.getElementById('mega'),header:document.querySelector('header.site'),onSelect:go});
+document.querySelectorAll('nav.cats a[data-cat]').forEach(a=>a.addEventListener('click',()=>set({cat:a.dataset.cat})));
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>set({cat:b.dataset.cat})));
+document.querySelectorAll('.cat').forEach(c=>c.addEventListener('click',()=>go({cat:c.dataset.cat})));
+q.addEventListener('input',render);
+grid.addEventListener('click',e=>{if(e.target.classList.contains('add')){n++;cartN.textContent=n}});
+render();
+</script>
+</body>
+</html>
